@@ -48,13 +48,8 @@ for i in range(len(l5)):
     else:
         r=(l5[i],l5[i+1])
         l6.append(r)
-
-
-
-
-
-
-
+        
+        
 def INV(y1, y2):
     dict1={}
     x2=list(x.reset_index().drop('index', axis = 1).iloc[y1+1:y2,0:len(x.columns)][1].dropna())
@@ -103,6 +98,7 @@ def AN2(y1,y2):
     x7=np.array(x6)
     dict3['values']=x7
     return dict3
+  
 def main():
     while True:
         print('1.INV')
